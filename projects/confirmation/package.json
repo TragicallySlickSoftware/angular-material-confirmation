@@ -2,7 +2,7 @@
   "name": "@tragically-slick/confirmation",
   "description": "A reusable confirmation dialog and service",
   "license": "GPL-3.0-only",
-  "version": "0.1.2-1",
+  "version": "0.1.2-2",
   "keywords": [
     "angular",
     "material",
@@ -19,10 +19,10 @@
     }
   ],
   "peerDependencies": {
-    "@angular/cdk": "^10.2.4",
-    "@angular/common": "^10.2.4",
-    "@angular/core": "^10.2.4",
-    "@angular/material": "^10.2.4"
+    "@angular/cdk": ">=10",
+    "@angular/common": ">=10",
+    "@angular/core": ">=10",
+    "@angular/material": ">=10"
   },
   "dependencies": {
     "tslib": "^2.0.0"
