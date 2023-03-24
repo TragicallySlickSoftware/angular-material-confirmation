@@ -19,3 +19,5 @@
 export * from './lib/confirmation.service';
 export * from './lib/confirmation.component';
 export * from './lib/confirmation.module';
+export * from './lib/confirmation-dialog-model';
+export * from './lib/confirmation';
