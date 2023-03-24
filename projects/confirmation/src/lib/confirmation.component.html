@@ -7,11 +7,11 @@
 </div>
 
 <div mat-dialog-actions>
-  <button mat-flat-button color="accent" (click)="onDecline()">
+  <button (click)="onDecline()" color="accent" mat-flat-button>
     <mat-icon>cancel</mat-icon>
     <mat-label>{{ noButton }}</mat-label>
   </button>
-  <button mat-flat-button color="primary" (click)="onConfirm()">
+  <button (click)="onConfirm()" color="primary" mat-flat-button>
     <mat-icon>check</mat-icon>
     <mat-label>{{ yesButton }}</mat-label>
   </button>

@@ -1,39 +1,28 @@
-# Tragically Slick Confirmation
+# Confirmation
 
-## Overview
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
-The confirmation library provides a easy to use and reusable confirmation system composed of:
+## Code scaffolding
 
- * a component to provide a standard dialog box, and
- * a service to initiate the process.
+Run `ng generate component component-name --project confirmation` to generate a new component. You can also
+use `ng generate directive|pipe|service|class|guard|interface|enum|module --project confirmation`.
+> Note: Don't forget to add `--project confirmation` or else it will be added to the default project in
+> your `angular.json` file.
 
-## How To Use The Package
+## Build
 
-Your will need to inject the ```ConfirmationService``` class into the component that will prompt the user
-and then responds to their input. Then, at the appropriate time, your code will call the ```confirm()```
-method, passing it the title and message for the dialog box as well as a callback hook for what to do if
-the user confirms the message.
+Run `ng build confirmation` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Look at the following code snippet:
+## Publishing
 
-```
-import { ConfirmationService } from '@tragically-slick/confirmation';
+After building your library with `ng build confirmation`, go to the dist folder `cd dist/confirmation` and
+run `npm publish`.
 
-@Component({...})
-export class MessagingBarComponent {
-  constructor(private confirmationService: ConfirmationService) {}
-  
-  onPromptUser(): void {
-    this.confirmationService.confirm({
-      title: 'Delete This Message',
-      message: 'Are you sure you want to delete this message?',
-      confirm: () => this.onDeleteMessage()
-    });
-  }
-...
-}  
-```
+## Running unit tests
 
-In this code sample, when the time comes to prompt a user to delete a message, this service is told to show
-a dialog box with the given title and message. If the user approves then the ```onDeleteMessage()``` method
-is called. Otherwise, the dialog box is closed and no action is taken.
+Run `ng test confirmation` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out
+the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

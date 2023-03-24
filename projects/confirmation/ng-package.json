@@ -3,6 +3,5 @@
   "dest": "../../dist/confirmation",
   "lib": {
     "entryFile": "src/public-api.ts"
-  },
-  "whitelistedNonPeerDependencies": []
+  }
 }

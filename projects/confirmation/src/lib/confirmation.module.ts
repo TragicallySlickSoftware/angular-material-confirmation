@@ -1,6 +1,6 @@
 /*
  * Tragically Slick Confirmation - A reusable confirmation component.
- * Copyright (C) 2021, Tragically Slick Software, LTD.
+ * Copyright (C) 2023, Tragically Slick Software, LTD.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,19 +17,13 @@
  */
 
 import { NgModule } from '@angular/core';
-import { ConfirmationComponent } from '../components/confirmation/confirmation.component';
+import { ConfirmationComponent } from './confirmation.component';
 import { MatIconModule } from '@angular/material/icon';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [ConfirmationComponent],
-  imports: [MatIconModule, MatFormFieldModule, MatDialogModule],
-  exports: [
-    ConfirmationComponent,
-    MatIconModule,
-    MatFormFieldModule,
-    MatDialogModule
-  ]
+  imports: [MatIconModule, MatInputModule],
+  exports: [ConfirmationComponent]
 })
-export class TragicallySlickConfirmationModule {}
+export class ConfirmationModule {}

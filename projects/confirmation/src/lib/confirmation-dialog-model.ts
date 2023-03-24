@@ -1,6 +1,6 @@
 /*
  * Tragically Slick Confirmation - A reusable confirmation component.
- * Copyright (C) 2021, Tragically Slick Software, LTD.
+ * Copyright (C) 2023, Tragically Slick Software, LTD.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,5 +16,9 @@
  * along with this program. If not, see <http://www.gnu.org/licenses>
  */
 
-export * from './components/edit-in-place/edit-in-place.component';
-export * from './lib/edit-in-place.module';
+export interface ConfirmationDialogModel {
+  title: string;
+  message: string;
+  yesButton?: string;
+  noButton?: string;
+}

@@ -18,9 +18,9 @@
 
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ConfirmationDialogModel } from '../models/confirmation-dialog-model';
-import { Confirmation } from '../models/confirmation';
-import { ConfirmationComponent } from '../components/confirmation/confirmation.component';
+import { Confirmation } from './confirmation';
+import { ConfirmationComponent } from './confirmation.component';
+import { ConfirmationDialogModel } from './confirmation-dialog-model';
 
 @Injectable({
   providedIn: 'root'

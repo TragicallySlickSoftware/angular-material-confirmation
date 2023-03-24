@@ -16,8 +16,6 @@
  * along with this program. If not, see <http://www.gnu.org/licenses>
  */
 
-export * from './components/confirmation/confirmation.component';
+export * from './lib/confirmation.service';
+export * from './lib/confirmation.component';
 export * from './lib/confirmation.module';
-export * from './models/confirmation';
-export * from './models/confirmation-dialog-model';
-export * from './services/confirmation.service';

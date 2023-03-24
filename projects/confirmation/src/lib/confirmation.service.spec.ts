@@ -24,8 +24,8 @@ import {
   MatDialogRef
 } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ConfirmationComponent } from '../components/confirmation/confirmation.component';
 import { of } from 'rxjs';
+import { ConfirmationComponent } from './confirmation.component';
 
 describe('ConfirmationService', () => {
   let service: ConfirmationService;
