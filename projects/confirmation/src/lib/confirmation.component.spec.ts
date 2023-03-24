@@ -32,39 +32,37 @@ describe('ConfirmationComponent', () => {
   let fixture: ComponentFixture<ConfirmationComponent>;
   let dialogRef: jasmine.SpyObj<MatDialogRef<ConfirmationComponent>>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [ConfirmationComponent],
-        imports: [
-          MatDialogModule,
-          MatButtonModule,
-          MatIconModule,
-          MatButtonModule,
-          MatFormFieldModule
-        ],
-        providers: [
-          {
-            provide: MatDialogRef,
-            useValue: {
-              close: jasmine.createSpy('MatDialogRef.close()')
-            }
-          },
-          {
-            provide: MAT_DIALOG_DATA,
-            useValue: {}
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [ConfirmationComponent],
+      imports: [
+        MatDialogModule,
+        MatButtonModule,
+        MatIconModule,
+        MatButtonModule,
+        MatFormFieldModule
+      ],
+      providers: [
+        {
+          provide: MatDialogRef,
+          useValue: {
+            close: jasmine.createSpy('MatDialogRef.close()')
           }
-        ]
-      }).compileComponents();
+        },
+        {
+          provide: MAT_DIALOG_DATA,
+          useValue: {}
+        }
+      ]
+    }).compileComponents();
 
-      fixture = TestBed.createComponent(ConfirmationComponent);
-      component = fixture.componentInstance;
-      dialogRef = TestBed.inject(MatDialogRef) as jasmine.SpyObj<
-        MatDialogRef<ConfirmationComponent>
-      >;
-      fixture.detectChanges();
-    })
-  );
+    fixture = TestBed.createComponent(ConfirmationComponent);
+    component = fixture.componentInstance;
+    dialogRef = TestBed.inject(MatDialogRef) as jasmine.SpyObj<
+      MatDialogRef<ConfirmationComponent>
+    >;
+    fixture.detectChanges();
+  }));
 
   it('should create', () => {
     expect(component).toBeTruthy();

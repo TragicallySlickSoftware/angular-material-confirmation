@@ -18,7 +18,7 @@ To build a package, use the following commands from the root directory:
 
 ```
   $ yarn install
-  $ ng build [component] --prod
+  $ ng build [component] --configuration production
   $ cd dist/[component]
   $ npm pack
   $ npm publish

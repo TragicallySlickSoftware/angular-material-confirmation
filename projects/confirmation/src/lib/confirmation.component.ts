@@ -18,7 +18,7 @@
 
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { ConfirmationDialogModel } from '../../models/confirmation-dialog-model';
+import { ConfirmationDialogModel } from './confirmation-dialog-model';
 
 @Component({
   selector: 'tsm-confirmation',
@@ -35,10 +35,10 @@ export class ConfirmationComponent {
     public dialogRef: MatDialogRef<ConfirmationComponent>,
     @Inject(MAT_DIALOG_DATA) public data: ConfirmationDialogModel
   ) {
-    this.title = data.title;
-    this.message = data.message;
-    this.yesButton = data.yesButton;
-    this.noButton = data.noButton;
+    this.title = data.title || '';
+    this.message = data.message || '';
+    this.yesButton = data.yesButton || '';
+    this.noButton = data.noButton || '';
   }
 
   onConfirm(): void {
