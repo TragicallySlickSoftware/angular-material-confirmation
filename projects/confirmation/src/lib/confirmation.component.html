@@ -1,17 +1,27 @@
-<h1 mat-dialog-title>
+<h2 mat-dialog-title>
   {{ title }}
-</h1>
+</h2>
 
 <div mat-dialog-content>
   <p>{{ message }}</p>
 </div>
 
-<div mat-dialog-actions>
-  <button (click)="onDecline()" color="accent" mat-flat-button>
+<div id="tsm-confirm-dialog-actions" mat-dialog-actions>
+  <button
+    id="ts-confirm-no-button"
+    mat-raised-button
+    [color]="noButtonColor"
+    (click)="onDecline()"
+  >
     <mat-icon>cancel</mat-icon>
     <mat-label>{{ noButton }}</mat-label>
   </button>
-  <button (click)="onConfirm()" color="primary" mat-flat-button>
+  <button
+    id="ts-confirm-yes-button"
+    mat-flat-button
+    [color]="yesButtonColor"
+    (click)="onConfirm()"
+  >
     <mat-icon>check</mat-icon>
     <mat-label>{{ yesButton }}</mat-label>
   </button>

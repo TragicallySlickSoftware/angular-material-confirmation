@@ -29,7 +29,11 @@ export class ConfirmationComponent {
   title: string;
   message: string;
   yesButton: string;
+  yesButtonClass: string;
+  yesButtonColor: string;
   noButton: string;
+  noButtonClass: string;
+  noButtonColor: string;
 
   constructor(
     public dialogRef: MatDialogRef<ConfirmationComponent>,
@@ -38,7 +42,11 @@ export class ConfirmationComponent {
     this.title = data.title || '';
     this.message = data.message || '';
     this.yesButton = data.yesButton || '';
+    this.yesButtonClass = data.yesButtonColor || '';
+    this.yesButtonColor = data.yesButtonColor || 'primary';
     this.noButton = data.noButton || '';
+    this.noButtonClass = data.noButton || '';
+    this.noButtonColor = data.noButtonColor || 'warn';
   }
 
   onConfirm(): void {
