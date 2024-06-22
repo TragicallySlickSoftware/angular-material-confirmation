@@ -21,10 +21,18 @@ import { ConfirmationComponent } from './confirmation.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogActions, MatDialogContainer, MatDialogContent } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [ConfirmationComponent],
-  imports: [MatIconModule, MatInputModule, MatButtonModule],
+  imports: [
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDialogContainer,
+    MatDialogContent,
+    MatDialogActions
+  ],
   exports: [ConfirmationComponent]
 })
 export class ConfirmationModule {}
