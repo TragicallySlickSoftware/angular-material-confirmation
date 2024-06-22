@@ -20,5 +20,7 @@ export interface ConfirmationDialogModel {
   title: string;
   message: string;
   yesButton?: string;
+  yesButtonColor?: string;
   noButton?: string;
+  noButtonColor?: string;
 }
